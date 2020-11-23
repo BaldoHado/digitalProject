@@ -1,3 +1,4 @@
+turnTo(0);
 penColor("brown");
 drawLine();
 drawLine();
