@@ -4,7 +4,7 @@ drawPond();
 drawAllTrees();
 
 function drawAllTrees(){
-  for (var i = 0; i < 5; i++) {
+  for (var i = 0; i < 7; i++) {
     moveTo(randomNumber(0,320),260);
     turnTo(0);
     drawTree(randomNumber(5,20), randomNumber(7, 15));
@@ -52,9 +52,10 @@ function drawTree(radius,length){
   penRGB(randomNumber(25,45), randomNumber(175,185), 47);
   dot(randomNumber(40,60));
   move(randomNumber(30,45), randomNumber(-40));
+  penRGB(randomNumber(25,45), randomNumber(175,185), 47);
   dot(randomNumber(20,40));
   move(randomNumber(-40,-20), randomNumber(-30,-20));
+  penRGB(randomNumber(20,50), randomNumber(170,190), randomNumber(40,50));
   dot(randomNumber(35,45));
   penUp();
-}
 }
