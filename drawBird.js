@@ -18,7 +18,7 @@ moveForward(30);
 turnTo(180);
 moveForward(23);
 penRGB(166, 138, 148);
-penWidth(7);
+penWidth(3);
 moveForward(25);
 turnRight(90);
 moveForward(5);
