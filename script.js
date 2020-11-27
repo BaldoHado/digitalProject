@@ -1,7 +1,3 @@
-onEvent("beginButton", "click", function( ) {
-  setScreen("gameScreen");
-});
-
 drawSky();
 drawGrass();
 drawPond();
@@ -26,33 +22,6 @@ function drawSky(){
   penUp();
 }
 
-function drawBird() {
-penColor("orange");
-penWidth("5");
-moveForward(20);
-
-penColor("red");
-penWidth(10);
-
-dot(15);
-penColor("Black");
-dot(6);
-penColor("red");
-
-turnRight(130);
-moveForward(40);
-turnTo(0);
-turnLeft(20);
-moveForward(30);
-turnTo(180);
-moveForward(23);
-penRGB(166, 138, 148);
-penWidth(3);
-moveForward(25);
-turnRight(90);
-moveForward(5);
-}
-
 function drawGrass(){
   penRGB(48, 199, 106);
   penWidth(200);
@@ -74,20 +43,20 @@ function drawPond(){
 
 function drawTree(radius,length){
   penWidth(20);
-  penRGB(117, 78, randomNumber(0,30));
+  penRGB(randomNumber(120,180), randomNumber(111,140), randomNumber(0,50));
   penDown();
   arcLeft(30,radius);
     for(var i = 0; i < length; i++){
     arcRight(30,radius);
     arcLeft(28,radius);
   }
-  penRGB(randomNumber(25,45), randomNumber(175,185), 47);
+  penRGB(randomNumber(20,80), randomNumber(140,185), randomNumber(20,50));
   dot(randomNumber(40,60));
   move(randomNumber(30,45), randomNumber(-40));
-  penRGB(randomNumber(25,45), randomNumber(175,185), 47);
+  penRGB(randomNumber(20,80), randomNumber(140,185), randomNumber(20,50));
   dot(randomNumber(20,40));
   move(randomNumber(-40,-20), randomNumber(-30,-20));
-  penRGB(randomNumber(20,50), randomNumber(170,190), randomNumber(40,50));
+  penRGB(randomNumber(20,80), randomNumber(140,185), randomNumber(20,50));
   dot(randomNumber(35,45));
   penUp();
 }
@@ -140,4 +109,3 @@ moveForward(20);
 turnTo(0);
 moveForward(20);
 }
-
